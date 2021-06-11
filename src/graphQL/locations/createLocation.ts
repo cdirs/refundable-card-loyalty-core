@@ -1,4 +1,4 @@
-import {Location} from '@cll.rest/types';
+import { Location } from '@cll.rest/types';
 
 export const createLocation = (location: Location) => `
     mutation {

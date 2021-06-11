@@ -1,4 +1,4 @@
-import {Card} from '@cll.rest/types';
+import { Card } from '@cll.rest/types';
 
 export const createCard = (card: Card) => `
     mutation {

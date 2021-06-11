@@ -1,7 +1,7 @@
-import {Location} from '@cll.rest/types';
+import { Location } from '@cll.rest/types';
 
-import {GraphQL} from '../..';
-import {Query} from '../axios';
+import { GraphQL } from '../..';
+import { Query } from '../axios';
 
 export const GetLocationsByMerchant = async (
   apikey: string,

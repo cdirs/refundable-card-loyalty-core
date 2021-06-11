@@ -1,4 +1,4 @@
-import {Card, Location} from '@cll.rest/types';
+import { Card, Location } from '@cll.rest/types';
 
 import {
   CreateCard,
