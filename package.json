@@ -1,6 +1,6 @@
 {
-  "name": "npm-package",
-  "version": "0.0.1",
+  "name": "@cll.rest/core",
+  "version": "1.0.0",
   "description": "",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
