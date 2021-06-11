@@ -1,7 +1,7 @@
-import {Transaction} from '@cll.rest/types';
+import { Transaction } from '@cll.rest/types';
 
-import {GraphQL} from '../..';
-import {Query} from '../axios';
+import { GraphQL } from '../..';
+import { Query } from '../axios';
 
 export const GetTransactions = async (
   apikey: string,
