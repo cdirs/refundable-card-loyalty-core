@@ -16,7 +16,7 @@ export const Query = async <QueryKey extends string, T = any>(
         },
         {
           headers: {
-            apikey: apikey,
+            apikey,
           },
         },
       )
