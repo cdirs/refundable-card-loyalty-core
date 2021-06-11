@@ -1,6 +1,14 @@
-import {Location} from '@cll.rest/types';
+import {Card, Location} from '@cll.rest/types';
 
-import {CreateLocation, GetBrands, GetCards, GetLocationsByMerchant, GetLocationsByPosition, GetMerchants} from './requests';
+import {
+  CreateCard,
+  CreateLocation,
+  GetBrands,
+  GetCards,
+  GetLocationsByMerchant,
+  GetLocationsByPosition,
+  GetMerchants,
+} from './requests';
 import RequestTypes from './types/requestTypes';
 
 export * as GraphQL from './graphql';
@@ -10,6 +18,7 @@ export default (apiKey: string, staging: boolean = false): RequestTypes => {
   return {
     getBrands: () => GetBrands(apiKey, staging),
     getCards: (userId: string) => GetCards(apiKey, userId, staging),
+    createCard: (card: Card) => CreateCard(apiKey, card, staging),
     getMerchants: () => GetMerchants(apiKey, staging),
     getMerchantsByCategory: (categoryId: string) => GetMerchants(apiKey, staging),
     createLocation: (location: Location) => CreateLocation(apiKey, location, staging),
