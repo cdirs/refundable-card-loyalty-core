@@ -5,3 +5,4 @@ export * from './locations/getLocationsByMerchant';
 export * from './locations/getLocationsByPosition';
 export * from './locations/createLocation';
 export * from './cards/createCard';
+export * from './transactions/getTransactions';

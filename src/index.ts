@@ -1,4 +1,4 @@
-import { Card, Location } from '@cll.rest/types';
+import {Card, Location} from '@cll.rest/types';
 
 import {
   CreateCard,
@@ -8,6 +8,7 @@ import {
   GetLocationsByMerchant,
   GetLocationsByPosition,
   GetMerchants,
+  GetTransactions,
 } from './requests';
 import RequestTypes from './types/requestTypes';
 
@@ -25,5 +26,6 @@ export default (apiKey: string, staging: boolean = false): RequestTypes => {
     getLocationsByMerchant: (merchantId: string) => GetLocationsByMerchant(apiKey, merchantId, staging),
     getLocationsByPosition: (longitude: number, latitude: number) =>
       GetLocationsByPosition(apiKey, longitude, latitude, staging),
+    getTransactions: (userId: string) => GetTransactions(apiKey, userId, staging),
   };
 };

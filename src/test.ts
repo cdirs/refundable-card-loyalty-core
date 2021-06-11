@@ -23,10 +23,12 @@ const runTest = async () => {
   // await loyalty.getLocationsByMerchant('sBxkUofebHY9Zgs8R27z').then(console.log).catch(console.error);
   // await loyalty.getLocationsByPosition(-0.1318224, 51.5138332).then(console.log).catch(console.error);
 
-  await loyalty
-    .createCard({ userId: 'NEWUSER', cardNumber: '4444000000004202', expiryMonth: 10, expiryYear: 2025 })
-    .then(console.log)
-    .catch(console.error);
+  // await loyalty
+  //   .createCard({ userId: 'NEWUSER', cardNumber: '4444000000004202', expiryMonth: 10, expiryYear: 2025 })
+  //   .then(console.log)
+  //   .catch(console.error);
+
+  await loyalty.getTransactions('TESTUSER').then(console.log).catch(console.error);
 };
 
 runTest();

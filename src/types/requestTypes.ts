@@ -1,4 +1,4 @@
-import { Brand, Card, Location, Merchant } from '@cll.rest/types';
+import {Brand, Card, Location, Merchant, Transaction} from '@cll.rest/types';
 
 type RequestTypes = {
   getBrands: () => Promise<Brand[]>;
@@ -9,6 +9,7 @@ type RequestTypes = {
   createLocation: (location: Location) => Promise<Location>;
   getLocationsByMerchant: (merchantId: string) => Promise<Location[]>;
   getLocationsByPosition: (longitude: number, latitude: number) => Promise<Location[]>;
+  getTransactions: (userId: string) => Promise<Transaction[]>;
 };
 
 export default RequestTypes;
