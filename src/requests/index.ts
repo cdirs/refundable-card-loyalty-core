@@ -5,4 +5,5 @@ export * from './locations/getLocationsByMerchant';
 export * from './locations/getLocationsByPosition';
 export * from './locations/createLocation';
 export * from './cards/createCard';
+export * from './cards/deleteCard';
 export * from './transactions/getTransactions';
