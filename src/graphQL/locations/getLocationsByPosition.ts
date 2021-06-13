@@ -8,6 +8,13 @@ export const getLocationsByPosition = (longitude: number, latitude: number) => `
         country
         longitude
         latitude
+        merchant {
+          name
+          description
+          websiteUrl
+          image
+          logoUrl
+        }
       }
     }
   `;

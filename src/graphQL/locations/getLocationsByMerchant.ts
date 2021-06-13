@@ -7,7 +7,14 @@ export const getLocationsByMerchant = (merchantId: string) => `
         postalCode
         country
         longitude
-        latitude
+        latitude        
+        merchant {
+          name
+          description
+          websiteUrl
+          image
+          logoUrl
+        }
       } 
     }
   `;
