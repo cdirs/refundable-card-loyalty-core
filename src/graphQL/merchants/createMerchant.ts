@@ -1,4 +1,4 @@
-import {Merchant} from '@cll.rest/types';
+import { Merchant } from '@cll.rest/types';
 
 export const createMerchant = (merchant: Merchant) => `
     mutation {
