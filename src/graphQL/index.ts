@@ -7,3 +7,4 @@ export * from './locations/createLocation';
 export * from './cards/createCard';
 export * from './cards/deleteCard';
 export * from './transactions/getTransactions';
+export * from './merchants/createMerchant';

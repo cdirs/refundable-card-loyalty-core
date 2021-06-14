@@ -21,7 +21,7 @@ export const Query = async <QueryKey extends string, T = any>(
         },
       )
       .then((res) => {
-        // console.log(res);
+        console.log(res.data);
         return res.data;
       })
       .then((res) => {

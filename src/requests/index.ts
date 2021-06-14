@@ -1,5 +1,6 @@
 export * from './brands/getBrands';
 export * from './merchants/getMerchants';
+export * from './merchants/createMerchant';
 export * from './cards/getCards';
 export * from './locations/getLocationsByMerchant';
 export * from './locations/getLocationsByPosition';

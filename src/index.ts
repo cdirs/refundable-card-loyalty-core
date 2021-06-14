@@ -1,8 +1,9 @@
-import { Card, Location } from '@cll.rest/types';
+import {Card, Location, Merchant} from '@cll.rest/types';
 
 import {
   CreateCard,
   CreateLocation,
+  CreateMerchant,
   GetBrands,
   GetCards,
   GetLocationsByMerchant,
@@ -21,6 +22,7 @@ export default (apiKey: string, staging: boolean = false): RequestTypes => {
     getCards: (userId: string) => GetCards(apiKey, userId, staging),
     createCard: (card: Card) => CreateCard(apiKey, card, staging),
     getMerchants: () => GetMerchants(apiKey, staging),
+    createMerchant: (merchant: Merchant) => CreateMerchant(apiKey, merchant, staging),
     getMerchantsByCategory: (categoryId: string) => GetMerchants(apiKey, staging),
     createLocation: (location: Location) => CreateLocation(apiKey, location, staging),
     getLocationsByMerchant: (merchantId: string) => GetLocationsByMerchant(apiKey, merchantId, staging),
