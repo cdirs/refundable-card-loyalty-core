@@ -5,20 +5,18 @@ const runTest = async () => {
 
   await loyalty
     .createMerchant({
-      name: 'Barnets',
-      description:
-        'I get a lot of people asking me how i started my business and it all started with my mother in laws 60th Birthday. I was looking into companies that offered balloon decorating services and after doing my research i decided i would try and give it a go myself.',
-      logoUrl: 'https://renewplanning.co.uk/wp-content/uploads/2016/01/11.-Barnet-logo.png',
-      image:
-        'https://s3.eu-west-2.amazonaws.com/luxurylondon.co.uk-storage-bucket-001/images/articles-body/224/haris-hair-salon-fulham-road-london.jpg',
-      websiteUrl: 'https://www.barnets.co.uk',
+      name: 'Subway',
+      description: 'Damn good sarnies.',
+      logoUrl: 'https://logos-download.com/wp-content/uploads/2016/03/Subway_logo_white.png',
+      image: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-subway-sub-1521220946.jpg',
+      websiteUrl: 'https://www.website.co.uk',
     })
     .then(({ id }) =>
       loyalty.createLocation({
         merchantId: id,
-        address1: '159 Bridgewater Rd',
-        town: 'Walkden',
-        postalCode: 'M28 3AF',
+        address1: '215 Eccles Old Rd',
+        town: 'Salford',
+        postalCode: 'M6 8HA',
         country: 'GBR',
       }),
     );
